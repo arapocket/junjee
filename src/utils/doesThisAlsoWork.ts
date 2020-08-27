@@ -1,0 +1,1 @@
+export const doesThisAlsoWork = (text: string) => text.toUpperCase()

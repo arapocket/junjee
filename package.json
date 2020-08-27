@@ -1,15 +1,18 @@
 {
   "name": "junjee",
-  "version": "0.0.1",
+  "version": "0.2.3",
   "description": "",
+  "jsnext:main": "dist/index.js",
   "main": "dist/index.js",
+  "module": "dist/index.js",
+  "type": "module",
+  "sideEffects": false,
   "scripts": {
-    "test": "jest",
+    "test": "jest --passWithNoTests",
     "test:watch": "npm run test -- --watch",
     "build": "tsc",
     "lint": "eslint --ext .ts,.tsx src",
-    "lint:fix": "npm run lint -- --fix",
-    "publish": "np"
+    "lint:fix": "npm run lint -- --fix"
   },
   "repository": {
     "type": "git",
@@ -24,7 +27,7 @@
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^3.10.1",
     "jest": "^26.4.2",
-    "np": "^6.4.0",
     "typescript": "^4.0.2"
-  }
+  },
+  "types": "dist/index.d.ts"
 }
